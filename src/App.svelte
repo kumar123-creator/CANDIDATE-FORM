@@ -110,4 +110,10 @@
       <input type="text" id="surname" bind:value={selectedCandidate.surname} on:input={(e) => handleFieldChange(e, 'surname')} />
       <label for="email">Email:</label>
       <input type="text" id="email" bind:value={selectedCandidate.email} on:input={(e) => handleFieldChange(e, 'email')} />
-      <label for="mobile">Mobile
+      <label for="mobile">Mobile:</label>
+      <input type="text" id="mobile" bind:value={selectedCandidate.mobile} on:input={(e) => handleFieldChange(e, 'mobile')} />
+      <button class="btn btn-primary" on:click={handleSaveClick}>Save</button>
+      <button class="btn btn-secondary" on:click={() => (selectedCandidate = null)}>Close</button>
+    </div>
+  </div>
+{/if}
